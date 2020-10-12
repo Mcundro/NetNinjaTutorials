@@ -23,8 +23,10 @@ header h1{
 .banner{
   position: relative;
 }
+
+/* Changed to width instead of max-width */
 .banner img{
-  max-width: 100%;
+  width: 100%;
 }
 .banner .Welcome{
   background-color: #feb614;
@@ -48,14 +50,16 @@ nav{
 }
 nav ul{
   white-space: nowrap;
-  max-width: 1200px;
   margin: 0 auto;
 }
+/* Took the padding from the <a> tag and moved it to the <li> to get the spacing you were looking */
 nav li{
   width: 25%;
   display: inline-block;
   font-size: 24px;
+  padding: 60px 24px;
 }
+/* got rid of the padding on the <a> tag and moved it to the <li> tag */
 nav li a{
   text-decoration: none;
   color: #4b4b4b;
@@ -94,7 +98,6 @@ article p{
 .join{
   background: #F4F4F4;
   text-align: center;
-  padding: 60px 20px;
   color: #4b4b4b
 }
 .join h2{
@@ -202,7 +205,7 @@ p::after{
   header{
     position: relative;
   }
-  
+
   nav{
     top: 0;
   }
